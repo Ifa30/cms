@@ -76,7 +76,7 @@ class ProductController extends Controller
             $product->update($data);
             return redirect()->route('products.index')->with('success', 'Produk berhasil diperbarui.');
         } catch (\Exception $e) {
-            return redirect()->back()->with('error', 'Gagal memperbarui produk: ' . $e->getMessage());
+            return redirect()->back()->with('error', 'berhasil memperbarui produk: ' . $e->getMessage());
         }
     }
 
